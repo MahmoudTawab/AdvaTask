@@ -1,0 +1,904 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0188D783CF25EAEB020AD84E /* Pods_AdvaTask_AdvaTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4F980175361CB5BA13AC44 /* Pods_AdvaTask_AdvaTaskUITests.framework */; };
+		1E32EA542C7E78400019294C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E32EA532C7E78400019294C /* Assets.xcassets */; };
+		1E32EA582C7E78400019294C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E32EA572C7E78400019294C /* Preview Assets.xcassets */; };
+		1E32EA6C2C7E78400019294C /* AdvaTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E32EA6B2C7E78400019294C /* AdvaTaskUITests.swift */; };
+		1E32EA6E2C7E78400019294C /* AdvaTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E32EA6D2C7E78400019294C /* AdvaTaskUITestsLaunchTests.swift */; };
+		1E32EA7C2C7E78700019294C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E32EA7A2C7E786F0019294C /* AppDelegate.swift */; };
+		1E32EA7F2C7E78C00019294C /* PhotoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E32EA7E2C7E78C00019294C /* PhotoListViewController.swift */; };
+		1E32EA832C7E79810019294C /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E32EA822C7E79810019294C /* Photo.swift */; };
+		1E32EA862C7E79A40019294C /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E32EA852C7E79A40019294C /* Protocols.swift */; };
+		1E32EA892C7E79EA0019294C /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E32EA882C7E79EA0019294C /* Interactor.swift */; };
+		1E32EA8C2C7E7A1A0019294C /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E32EA8B2C7E7A1A0019294C /* Presenter.swift */; };
+		1E32EA912C7E7A950019294C /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E32EA902C7E7A950019294C /* PhotoCell.swift */; };
+		1E32EA942C7E7BD30019294C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E32EA932C7E7BD30019294C /* NetworkService.swift */; };
+		1E32EA962C7E7CFD0019294C /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E32EA952C7E7CFD0019294C /* PhotoDetailViewController.swift */; };
+		1E8627012C7E84F5004FB801 /* LoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8627002C7E84F5004FB801 /* LoadingCell.swift */; };
+		1E8627082C7EA229004FB801 /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8627072C7EA229004FB801 /* NetworkServiceTests.swift */; };
+		1E86270A2C7EA24E004FB801 /* PhotoListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8627092C7EA24E004FB801 /* PhotoListPresenterTests.swift */; };
+		1E86270C2C7EA270004FB801 /* PhotoListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E86270B2C7EA270004FB801 /* PhotoListInteractorTests.swift */; };
+		1E86270E2C7EA353004FB801 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1E86270D2C7EA353004FB801 /* README.md */; };
+		1E8627582C7EAB6E004FB801 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8627572C7EAB6E004FB801 /* Router.swift */; };
+		4A93247FC6A2F4446BC5124E /* Pods_AdvaTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AEA8B51157D492F1AF052C4 /* Pods_AdvaTask.framework */; };
+		BBA998EAC5E877D64A3B3ED9 /* Pods_AdvaTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCFD629345DC4D79AE1ACCAD /* Pods_AdvaTaskTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1E32EA5E2C7E78400019294C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E32EA442C7E783D0019294C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E32EA4B2C7E783D0019294C;
+			remoteInfo = AdvaTask;
+		};
+		1E32EA682C7E78400019294C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E32EA442C7E783D0019294C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E32EA4B2C7E783D0019294C;
+			remoteInfo = AdvaTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C4F980175361CB5BA13AC44 /* Pods_AdvaTask_AdvaTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdvaTask_AdvaTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1660DC869CDB99B75C0D7764 /* Pods-AdvaTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdvaTask.debug.xcconfig"; path = "Target Support Files/Pods-AdvaTask/Pods-AdvaTask.debug.xcconfig"; sourceTree = "<group>"; };
+		1E32EA4C2C7E783E0019294C /* AdvaTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdvaTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E32EA532C7E78400019294C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1E32EA552C7E78400019294C /* AdvaTask.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AdvaTask.entitlements; sourceTree = "<group>"; };
+		1E32EA572C7E78400019294C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1E32EA5D2C7E78400019294C /* AdvaTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdvaTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E32EA672C7E78400019294C /* AdvaTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdvaTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E32EA6B2C7E78400019294C /* AdvaTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvaTaskUITests.swift; sourceTree = "<group>"; };
+		1E32EA6D2C7E78400019294C /* AdvaTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvaTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1E32EA7A2C7E786F0019294C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1E32EA7E2C7E78C00019294C /* PhotoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListViewController.swift; sourceTree = "<group>"; };
+		1E32EA822C7E79810019294C /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		1E32EA852C7E79A40019294C /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		1E32EA882C7E79EA0019294C /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		1E32EA8B2C7E7A1A0019294C /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		1E32EA902C7E7A950019294C /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		1E32EA932C7E7BD30019294C /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		1E32EA952C7E7CFD0019294C /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
+		1E32EA982C7E7FAF0019294C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1E8627002C7E84F5004FB801 /* LoadingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCell.swift; sourceTree = "<group>"; };
+		1E8627072C7EA229004FB801 /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
+		1E8627092C7EA24E004FB801 /* PhotoListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListPresenterTests.swift; sourceTree = "<group>"; };
+		1E86270B2C7EA270004FB801 /* PhotoListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListInteractorTests.swift; sourceTree = "<group>"; };
+		1E86270D2C7EA353004FB801 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1E8627572C7EAB6E004FB801 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		4AEA8B51157D492F1AF052C4 /* Pods_AdvaTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdvaTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6942E67FD229A40C3B027471 /* Pods-AdvaTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdvaTaskTests.release.xcconfig"; path = "Target Support Files/Pods-AdvaTaskTests/Pods-AdvaTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		6FF2FDB17847BF6352E90A91 /* Pods-AdvaTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdvaTask.release.xcconfig"; path = "Target Support Files/Pods-AdvaTask/Pods-AdvaTask.release.xcconfig"; sourceTree = "<group>"; };
+		74787C6873A51650D3E3E3E5 /* Pods-AdvaTask-AdvaTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdvaTask-AdvaTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-AdvaTask-AdvaTaskUITests/Pods-AdvaTask-AdvaTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A1E1E086D597AE1B19DA0ACB /* Pods-AdvaTask-AdvaTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdvaTask-AdvaTaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-AdvaTask-AdvaTaskUITests/Pods-AdvaTask-AdvaTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A6491897A43BEC8B8CC8C336 /* Pods-AdvaTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdvaTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-AdvaTaskTests/Pods-AdvaTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BCFD629345DC4D79AE1ACCAD /* Pods_AdvaTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdvaTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1E32EA492C7E783D0019294C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A93247FC6A2F4446BC5124E /* Pods_AdvaTask.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E32EA5A2C7E78400019294C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBA998EAC5E877D64A3B3ED9 /* Pods_AdvaTaskTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E32EA642C7E78400019294C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0188D783CF25EAEB020AD84E /* Pods_AdvaTask_AdvaTaskUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E32EA432C7E783D0019294C = {
+			isa = PBXGroup;
+			children = (
+				1E32EA4E2C7E783E0019294C /* AdvaTask */,
+				1E32EA602C7E78400019294C /* AdvaTaskTests */,
+				1E32EA6A2C7E78400019294C /* AdvaTaskUITests */,
+				1E32EA4D2C7E783E0019294C /* Products */,
+				C39E83A607E96E81609AE13D /* Pods */,
+				4C02841DEA349D6A0F31AD39 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1E32EA4D2C7E783E0019294C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1E32EA4C2C7E783E0019294C /* AdvaTask.app */,
+				1E32EA5D2C7E78400019294C /* AdvaTaskTests.xctest */,
+				1E32EA672C7E78400019294C /* AdvaTaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1E32EA4E2C7E783E0019294C /* AdvaTask */ = {
+			isa = PBXGroup;
+			children = (
+				1E32EA982C7E7FAF0019294C /* Info.plist */,
+				1E32EA7A2C7E786F0019294C /* AppDelegate.swift */,
+				1E32EA802C7E79350019294C /* View */,
+				1E32EA872C7E79DC0019294C /* Interactor */,
+				1E32EA8A2C7E7A0D0019294C /* Presenter */,
+				1E32EA812C7E79740019294C /* Entities */,
+				1E32EA8D2C7E7A350019294C /* Router */,
+				1E32EA842C7E79960019294C /* Protocols */,
+				1E32EA922C7E7BC10019294C /* NetworkService */,
+				1E32EA532C7E78400019294C /* Assets.xcassets */,
+				1E32EA552C7E78400019294C /* AdvaTask.entitlements */,
+				1E86270D2C7EA353004FB801 /* README.md */,
+				1E32EA562C7E78400019294C /* Preview Content */,
+			);
+			path = AdvaTask;
+			sourceTree = "<group>";
+		};
+		1E32EA562C7E78400019294C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1E32EA572C7E78400019294C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1E32EA602C7E78400019294C /* AdvaTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				1E8627072C7EA229004FB801 /* NetworkServiceTests.swift */,
+				1E8627092C7EA24E004FB801 /* PhotoListPresenterTests.swift */,
+				1E86270B2C7EA270004FB801 /* PhotoListInteractorTests.swift */,
+			);
+			path = AdvaTaskTests;
+			sourceTree = "<group>";
+		};
+		1E32EA6A2C7E78400019294C /* AdvaTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1E32EA6B2C7E78400019294C /* AdvaTaskUITests.swift */,
+				1E32EA6D2C7E78400019294C /* AdvaTaskUITestsLaunchTests.swift */,
+			);
+			path = AdvaTaskUITests;
+			sourceTree = "<group>";
+		};
+		1E32EA802C7E79350019294C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1E8627022C7E8A9D004FB801 /* Cell */,
+				1E8626FF2C7E81B5004FB801 /* Controller */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1E32EA812C7E79740019294C /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				1E32EA822C7E79810019294C /* Photo.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		1E32EA842C7E79960019294C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1E32EA852C7E79A40019294C /* Protocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		1E32EA872C7E79DC0019294C /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				1E32EA882C7E79EA0019294C /* Interactor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		1E32EA8A2C7E7A0D0019294C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1E32EA8B2C7E7A1A0019294C /* Presenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1E32EA8D2C7E7A350019294C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				1E8627572C7EAB6E004FB801 /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		1E32EA922C7E7BC10019294C /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				1E32EA932C7E7BD30019294C /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		1E8626FF2C7E81B5004FB801 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1E32EA7E2C7E78C00019294C /* PhotoListViewController.swift */,
+				1E32EA952C7E7CFD0019294C /* PhotoDetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1E8627022C7E8A9D004FB801 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1E32EA902C7E7A950019294C /* PhotoCell.swift */,
+				1E8627002C7E84F5004FB801 /* LoadingCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		4C02841DEA349D6A0F31AD39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4AEA8B51157D492F1AF052C4 /* Pods_AdvaTask.framework */,
+				0C4F980175361CB5BA13AC44 /* Pods_AdvaTask_AdvaTaskUITests.framework */,
+				BCFD629345DC4D79AE1ACCAD /* Pods_AdvaTaskTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C39E83A607E96E81609AE13D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1660DC869CDB99B75C0D7764 /* Pods-AdvaTask.debug.xcconfig */,
+				6FF2FDB17847BF6352E90A91 /* Pods-AdvaTask.release.xcconfig */,
+				A1E1E086D597AE1B19DA0ACB /* Pods-AdvaTask-AdvaTaskUITests.debug.xcconfig */,
+				74787C6873A51650D3E3E3E5 /* Pods-AdvaTask-AdvaTaskUITests.release.xcconfig */,
+				A6491897A43BEC8B8CC8C336 /* Pods-AdvaTaskTests.debug.xcconfig */,
+				6942E67FD229A40C3B027471 /* Pods-AdvaTaskTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1E32EA4B2C7E783D0019294C /* AdvaTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E32EA712C7E78400019294C /* Build configuration list for PBXNativeTarget "AdvaTask" */;
+			buildPhases = (
+				0CE8E7B29F06166714E422FC /* [CP] Check Pods Manifest.lock */,
+				1E32EA482C7E783D0019294C /* Sources */,
+				1E32EA492C7E783D0019294C /* Frameworks */,
+				1E32EA4A2C7E783D0019294C /* Resources */,
+				34C8D1B1ECA5DDED6EE4FDB2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AdvaTask;
+			productName = AdvaTask;
+			productReference = 1E32EA4C2C7E783E0019294C /* AdvaTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1E32EA5C2C7E78400019294C /* AdvaTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E32EA742C7E78400019294C /* Build configuration list for PBXNativeTarget "AdvaTaskTests" */;
+			buildPhases = (
+				65F94EBC203C24C405EF245C /* [CP] Check Pods Manifest.lock */,
+				1E32EA592C7E78400019294C /* Sources */,
+				1E32EA5A2C7E78400019294C /* Frameworks */,
+				1E32EA5B2C7E78400019294C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E32EA5F2C7E78400019294C /* PBXTargetDependency */,
+			);
+			name = AdvaTaskTests;
+			productName = AdvaTaskTests;
+			productReference = 1E32EA5D2C7E78400019294C /* AdvaTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1E32EA662C7E78400019294C /* AdvaTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E32EA772C7E78400019294C /* Build configuration list for PBXNativeTarget "AdvaTaskUITests" */;
+			buildPhases = (
+				D566E57CF95530B0EB15C9F6 /* [CP] Check Pods Manifest.lock */,
+				1E32EA632C7E78400019294C /* Sources */,
+				1E32EA642C7E78400019294C /* Frameworks */,
+				1E32EA652C7E78400019294C /* Resources */,
+				7EDFA502F867E2F8CBCF5CBD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E32EA692C7E78400019294C /* PBXTargetDependency */,
+			);
+			name = AdvaTaskUITests;
+			productName = AdvaTaskUITests;
+			productReference = 1E32EA672C7E78400019294C /* AdvaTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1E32EA442C7E783D0019294C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					1E32EA4B2C7E783D0019294C = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					1E32EA5C2C7E78400019294C = {
+						CreatedOnToolsVersion = 15.1;
+						LastSwiftMigration = 1510;
+						TestTargetID = 1E32EA4B2C7E783D0019294C;
+					};
+					1E32EA662C7E78400019294C = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 1E32EA4B2C7E783D0019294C;
+					};
+				};
+			};
+			buildConfigurationList = 1E32EA472C7E783D0019294C /* Build configuration list for PBXProject "AdvaTask" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1E32EA432C7E783D0019294C;
+			productRefGroup = 1E32EA4D2C7E783E0019294C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1E32EA4B2C7E783D0019294C /* AdvaTask */,
+				1E32EA5C2C7E78400019294C /* AdvaTaskTests */,
+				1E32EA662C7E78400019294C /* AdvaTaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1E32EA4A2C7E783D0019294C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E86270E2C7EA353004FB801 /* README.md in Resources */,
+				1E32EA582C7E78400019294C /* Preview Assets.xcassets in Resources */,
+				1E32EA542C7E78400019294C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E32EA5B2C7E78400019294C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E32EA652C7E78400019294C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CE8E7B29F06166714E422FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AdvaTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34C8D1B1ECA5DDED6EE4FDB2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AdvaTask/Pods-AdvaTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AdvaTask/Pods-AdvaTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AdvaTask/Pods-AdvaTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65F94EBC203C24C405EF245C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AdvaTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EDFA502F867E2F8CBCF5CBD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AdvaTask-AdvaTaskUITests/Pods-AdvaTask-AdvaTaskUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AdvaTask-AdvaTaskUITests/Pods-AdvaTask-AdvaTaskUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AdvaTask-AdvaTaskUITests/Pods-AdvaTask-AdvaTaskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D566E57CF95530B0EB15C9F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AdvaTask-AdvaTaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E32EA482C7E783D0019294C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E8627582C7EAB6E004FB801 /* Router.swift in Sources */,
+				1E32EA8C2C7E7A1A0019294C /* Presenter.swift in Sources */,
+				1E32EA832C7E79810019294C /* Photo.swift in Sources */,
+				1E32EA7C2C7E78700019294C /* AppDelegate.swift in Sources */,
+				1E8627012C7E84F5004FB801 /* LoadingCell.swift in Sources */,
+				1E32EA942C7E7BD30019294C /* NetworkService.swift in Sources */,
+				1E32EA912C7E7A950019294C /* PhotoCell.swift in Sources */,
+				1E32EA892C7E79EA0019294C /* Interactor.swift in Sources */,
+				1E32EA7F2C7E78C00019294C /* PhotoListViewController.swift in Sources */,
+				1E32EA962C7E7CFD0019294C /* PhotoDetailViewController.swift in Sources */,
+				1E32EA862C7E79A40019294C /* Protocols.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E32EA592C7E78400019294C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E8627082C7EA229004FB801 /* NetworkServiceTests.swift in Sources */,
+				1E86270A2C7EA24E004FB801 /* PhotoListPresenterTests.swift in Sources */,
+				1E86270C2C7EA270004FB801 /* PhotoListInteractorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E32EA632C7E78400019294C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E32EA6E2C7E78400019294C /* AdvaTaskUITestsLaunchTests.swift in Sources */,
+				1E32EA6C2C7E78400019294C /* AdvaTaskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1E32EA5F2C7E78400019294C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E32EA4B2C7E783D0019294C /* AdvaTask */;
+			targetProxy = 1E32EA5E2C7E78400019294C /* PBXContainerItemProxy */;
+		};
+		1E32EA692C7E78400019294C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E32EA4B2C7E783D0019294C /* AdvaTask */;
+			targetProxy = 1E32EA682C7E78400019294C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1E32EA6F2C7E78400019294C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1E32EA702C7E78400019294C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		1E32EA722C7E78400019294C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1660DC869CDB99B75C0D7764 /* Pods-AdvaTask.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AdvaTask/AdvaTask.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AdvaTask/Preview Content\"";
+				DEVELOPMENT_TEAM = 67569VWZW4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AdvaTask/Info.plist;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mahmoud.AdvaTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1E32EA732C7E78400019294C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FF2FDB17847BF6352E90A91 /* Pods-AdvaTask.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AdvaTask/AdvaTask.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AdvaTask/Preview Content\"";
+				DEVELOPMENT_TEAM = 67569VWZW4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AdvaTask/Info.plist;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mahmoud.AdvaTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1E32EA752C7E78400019294C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6491897A43BEC8B8CC8C336 /* Pods-AdvaTaskTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 67569VWZW4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mahmoud.AdvaTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdvaTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AdvaTask";
+			};
+			name = Debug;
+		};
+		1E32EA762C7E78400019294C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6942E67FD229A40C3B027471 /* Pods-AdvaTaskTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 67569VWZW4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mahmoud.AdvaTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdvaTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AdvaTask";
+			};
+			name = Release;
+		};
+		1E32EA782C7E78400019294C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1E1E086D597AE1B19DA0ACB /* Pods-AdvaTask-AdvaTaskUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 67569VWZW4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mahmoud.AdvaTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AdvaTask;
+			};
+			name = Debug;
+		};
+		1E32EA792C7E78400019294C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74787C6873A51650D3E3E3E5 /* Pods-AdvaTask-AdvaTaskUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 67569VWZW4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mahmoud.AdvaTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AdvaTask;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E32EA472C7E783D0019294C /* Build configuration list for PBXProject "AdvaTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E32EA6F2C7E78400019294C /* Debug */,
+				1E32EA702C7E78400019294C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E32EA712C7E78400019294C /* Build configuration list for PBXNativeTarget "AdvaTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E32EA722C7E78400019294C /* Debug */,
+				1E32EA732C7E78400019294C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E32EA742C7E78400019294C /* Build configuration list for PBXNativeTarget "AdvaTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E32EA752C7E78400019294C /* Debug */,
+				1E32EA762C7E78400019294C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E32EA772C7E78400019294C /* Build configuration list for PBXNativeTarget "AdvaTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E32EA782C7E78400019294C /* Debug */,
+				1E32EA792C7E78400019294C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1E32EA442C7E783D0019294C /* Project object */;
+}
