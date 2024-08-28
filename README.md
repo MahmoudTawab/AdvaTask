@@ -32,7 +32,7 @@ This project follows the VIPER architecture, which separates the concerns of the
 
 ## Unit Tests
 Unit tests have been implemented using `XCTest` to cover the following components:
-- `PhotoListViewModel`: Tests the photo loading functionality.
+- `PhotoList`: Tests the photo loading functionality.
 - `ImageLoader`: Tests the image loading from a URL.
 
 ### To Run Unit Tests:
